@@ -1,1 +1,1 @@
-This is inital file.
+# This is a e-commerce project.
