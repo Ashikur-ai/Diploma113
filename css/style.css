@@ -49,4 +49,14 @@
     display: flex;
     align-items: center;
 }
+/* box 3  */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 620px;
+    background-color: pink;
+    height: 40px;
+    border-radius: 4px;
+}
+
 
