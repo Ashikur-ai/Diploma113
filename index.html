@@ -1,167 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind css link  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Youtube clone</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <nav class="flex justify-between mt-1 px-3">
+        <nav class="flex md:justify-between gap-5 mt-1 px-3">
             <!-- first div -->
             <div class="flex items-center justify-center ">
-                <img class="w-36 h-20" src="images/youtube-logo.jpg" alt="">
-                
+                <img class=" w-20 lg:w-36 lg:h-20" src="images/youtube-logo.jpg" alt="">
             </div>
+
             <!-- second div -->
-             <div class=" flex items-center">
-                <input class="w-[450px] px-5 py-3 focus:outline-none border   rounded-tl-full rounded-bl-full " type="text" placeholder="Search">
-                <i  class="fa-solid fa-magnifying-glass  text-3xl border py-[6px] px-4 rounded-tr-full rounded-br-full mr-4  "></i>
-                <i class="fa-solid fa-microphone border text-3xl py-[6px] px-[10px] hover:bg-gray-200 rounded-full "></i>
-             </div>
-             <!-- third div -->
-              <div class="text-3xl flex items-center">
-                <i class="fas fa-video"></i>
-                <i class="fas fa-bell mx-6"></i>
+            <div class=" flex items-center">
+                <input class=" w-36 md:w-[450px] px-5 py-2 focus:outline-none border   rounded-tl-full rounded-bl-full "
+                    type="text" placeholder="Search">
+                <i
+                    class="fa-solid fa-magnifying-glass  text-xl border py-[6px] px-4 rounded-tr-full rounded-br-full mr-4  "></i>
+                <i
+                    class="fa-solid fa-microphone border hidden lg:block text-xl py-[6px] px-[10px] hover:bg-gray-200 rounded-full "></i>
+            </div>
+
+            <!-- third div -->
+            <div class="text-xl flex items-center">
+                <i class="fas fa-video hidden md:block"></i>
+                <i class="fas fa-bell mx-6 hidden md:block"></i>
                 <button class="bg-[#aa47bc] rounded-full text-white py-[4px] px-[7px]">M</button>
-              </div>
+            </div>
+
+
+
         </nav>
     </header>
 
-    <main class="flex gap-5">
-        
+    <main class="flex md:gap-5">
+    
         <!-- 1st div -->
-        <div class="w-1/6  ml-5">
-           <div class="flex items-center text-xl gap-10 bg-gray-200 p-3 rounded-xl mb-3">
-            <i class="fas fa-house"></i>
-            <p>Home</p>
-           </div>
-
-           <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
-            <i class="fas fa-play"></i>
-            <p>Shorts</p>
-           </div>
-           <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
-            <i class="fas fa-history"></i>
-            <p>History</p>
-           </div>
-
-           <hr class="my-5">
-           <p class="text-2xl font-bold mb-2">You ></p>
-
-           <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
-            <i class="fa-solid fa-thumbs-up"></i>
-            <p>Liked</p>
-           </div>
-           <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
-            <i class="fa-solid fa-circle-play"></i>
-            <p>Yours Videos</p>
-           </div>
-           
-           <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
-            <i class="fa-regular fa-clock"></i>
-            <p >Watch later</p>
-           </div>
-           <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
-            <i class="fa-solid fa-download"></i>
-            <p >Downlodes</p>
-           </div>
-
-           <hr class="my-5">
-           <p class="text-2xl font-bold">Subscriptions</p>
-
-           <div class="flex  items-center gap-3 mt-2 hover:bg-gray-200 p-3 rounded-xl">
-            <img class="w-[40px] h-[40px] rounded-full" src="images/jhankar-mahbub.jpg " alt="">
-            <p class="text-xl">Jhankar Mahbub</p>
-           </div>
-
-           <div class="flex  items-center gap-3  hover:bg-gray-200 p-3 rounded-xl">
-            <img class="w-[40px] h-[40px] rounded-full" src="images/stack-learnerjpg.jpg " alt="">
-            <p class="text-xl">Stack Learner</p>
-           </div>
-           <div class="flex  items-center gap-3  hover:bg-gray-200 p-3 rounded-xl">
-            <img class="w-[40px] h-[40px] rounded-full" src="images/programming-shikbo.jpg " alt="">
-            <p class="text-xl">Stack Learner</p>
-           </div>
+        <div class="w-auto lg:w-1/6  ml-5  hidden md:block">
+            <div class="flex items-center text-xl gap-10 bg-gray-200 p-3 rounded-xl mb-3">
+                <i class="fas fa-house"></i>
+                <p class="hidden lg:block">Home</p>
+            </div>
+    
+            <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
+                <i class="fas fa-play"></i>
+                <p class="hidden lg:block">Shorts</p>
+            </div>
+            <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
+                <i class="fas fa-history"></i>
+                <p class="hidden lg:block">History</p>
+            </div>
+    
+            <hr class="my-5">
+            <p class="text-2xl font-bold mb-2 hidden lg:block">You ></p>
+    
+            <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <p class="hidden lg:block">Liked</p>
+            </div>
+            <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
+                <i class="fa-solid fa-circle-play"></i>
+                <p class="hidden lg:block">Yours Videos</p>
+            </div>
+    
+            <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
+                <i class="fa-regular fa-clock"></i>
+                <p class="hidden lg:block">Watch later</p>
+            </div>
+            <div class="flex items-center text-xl gap-10 hover:bg-gray-200 p-3 rounded-xl">
+                <i class="fa-solid fa-download"></i>
+                <p class="hidden lg:block">Downlodes</p>
+            </div>
+    
+            <hr class="my-5">
+            <p class="text-2xl font-bold hidden lg:block">Subscriptions</p>
+    
+            <div class="flex  items-center gap-3 mt-2 hover:bg-gray-200 p-3 rounded-xl">
+                <img class="w-[40px] h-[40px] rounded-full" src="images/jhankar-mahbub.jpg " alt="">
+                <p class="text-xl hidden lg:block">Jhankar Mahbub</p>
+            </div>
+    
+            <div class="flex  items-center gap-3  hover:bg-gray-200 p-3 rounded-xl">
+                <img class="w-[40px] h-[40px] rounded-full" src="images/stack-learnerjpg.jpg " alt="">
+                <p class="text-xl hidden lg:block">Stack Learner</p>
+            </div>
+            <div class="flex  items-center gap-3  hover:bg-gray-200 p-3 rounded-xl">
+                <img class="w-[40px] h-[40px] rounded-full" src="images/programming-shikbo.jpg " alt="">
+                <p class="text-xl hidden lg:block">Stack Learner</p>
+            </div>
         </div>
 
         <!-- 2nd div -->
-         <div class="w-5/6 ">
-            <div class="flex gap-5">
-                <p class="bg-black p-3 rounded-xl text-xl font-medium text-white" >All</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >News</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >News</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Music</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Mixes</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Live</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Motovlogs</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >programming-shikbo</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Web Development</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Gamming</p>
-                <p class="bg-gray-200 p-3 rounded-xl text-xl font-medium text-black" >Natok</p>
+        <div class="w-5/6 ">
+            <!-- button div  -->
+            <div class="md:flex md:flex-wrap md:mt-3 gap-5 hidden lg:text-xl">
+                <p class="bg-black px-3 py-1 rounded-xl font-medium text-white">All</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">News</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">News</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Music</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Mixes</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Live</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Motovlogs</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">programming-shikbo</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Web Development</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Gamming</p>
+                <p class="bg-gray-200 px-3 py-1 rounded-xl font-medium text-black">Natok</p>
             </div>
-
-            <div class="mt-5 grid grid grid-cols-3 ">
+        
+            <!-- video div -->
+            <div class="mt-5 grid pl-8 gap-3 lg:pl-0 md:grid-cols-2 lg:grid-cols-4">
+                <div class="">
+                    <iframe class="rounded-xl" 
+                        src="https://www.youtube.com/embed/g9TfVOCnS9U?si=G8QuSYbxOGTP0U1-" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="flex items-center mt-5 gap-3">
+                        <img class="w-[40px] h-[40px] rounded-full" src="./images/msi-vlogs.jpg" alt="">
+                        <p class=" font-semibold">নতুন কিছু আসছে সামনে <br> | MSI Vlogs |</p>
+                    </div>
+                </div>
+            
                 <div>
-                    <iframe class="rounded-xl" width="440" height="250" src="https://www.youtube.com/embed/g9TfVOCnS9U?si=G8QuSYbxOGTP0U1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="flex items-center mt-5 gap-3">
-                        <img class="w-[40px] h-[40px] rounded-full"  src="./images/msi-vlogs.jpg" alt="">
-                        <p class="text-xl font-semibold">নতুন কিছু আসছে সামনে | MSI Vlogs |</p>
-                     </div>
-                </div>
-
-                <div>
-                    <iframe class="rounded-xl" width="440" height="250" src="https://www.youtube.com/embed/Ag3zMEJtHAA?si=ie94UxiVN-NUhVFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="flex items-center mt-5 gap-3">
-                        <img class="w-[40px] h-[40px] rounded-full"  src="./images/jhankar-mahbub.jpg" alt="">
-                        <p class="text-lg font-bold">ভার্সিটি লাইফের ৪ বছর পরে বেকার না থাকার জন্য এই কাজগুলো করতেই হবে </p>
-                     </div>
+                    <iframe class="rounded-xl" 
+                        src="https://www.youtube.com/embed/Ag3zMEJtHAA?si=ie94UxiVN-NUhVFQ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="flex items-center mt-5 gap-3">
+                        <img class="w-[40px] h-[40px] rounded-full" src="./images/jhankar-mahbub.jpg" alt="">
+                        <p class="text-lg font-bold">ভার্সিটি লাইফের ৪ বছর পরে <br> বেকার না থাকার জন্য এই <br> কাজগুলো করতেই হবে </p>
+                    </div>
                 </div>
                 <div>
-                    <iframe class="rounded-xl" width="440" height="250" src="https://www.youtube.com/embed/59JMgdcM1O4?si=FwkYYsmbsCMnsDfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="flex items-center mt-5 gap-3">
-                        <img class="w-[40px] h-[40px] rounded-full"  src="./images/programming-shikbo.jpg" alt="">
-                        <p class="text-lg font-bold">Projects-11 - How to Make a Recipe Website Using JavaScript |</p>
-                     </div>
+                    <iframe class="rounded-xl" 
+                        src="https://www.youtube.com/embed/59JMgdcM1O4?si=FwkYYsmbsCMnsDfX" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="flex items-center mt-5 gap-3">
+                        <img class="w-[40px] h-[40px] rounded-full" src="./images/programming-shikbo.jpg" alt="">
+                        <p class="text-lg font-bold">Projects-11 - How to Make <br> a Recipe Website Using <br> JavaScript |</p>
+                    </div>
                 </div>
-
+            
                 <div class="mt-2">
-                   <iframe class="rounded-xl" width="440" height="250" src="https://www.youtube.com/embed/GjCCyEwuzmI?si=XJpvr9nAVwXOZxzv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="flex items-center mt-5 gap-3">
-                        <img class="w-[40px] h-[40px] rounded-full"  src="./images/stack-learnerjpg.jpg" alt="">
-                        <p class="text-lg font-bold">Day 10: Case Study-3 : Netflix | System Design and Application Architecture Workshop</p>
-                     </div>
+                    <iframe class="rounded-xl" 
+                        src="https://www.youtube.com/embed/GjCCyEwuzmI?si=XJpvr9nAVwXOZxzv" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="flex items-center mt-5 gap-3">
+                        <img class="w-[40px] h-[40px] rounded-full" src="./images/stack-learnerjpg.jpg" alt="">
+                        <p class="text-lg font-bold">Day 10: Case Study-3 : Netflix | System Design and Application Architecture
+                            Workshop</p>
+                    </div>
                 </div>
-
+            
                 <div class="mt-2">
-                    <iframe class="rounded-lg" width="440" height="250" src="https://www.youtube.com/embed/qwNuYbxVIYk?si=XHAdLfSbc2o6q5C2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="flex items-center mt-5 gap-3">
-                        <img class="w-[40px] h-[40px] rounded-full"  src="./images/anisul-islam.jpg" alt="">
-                        <p class="text-lg font-bold">Master Redux Toolkit with React | Complete Guide for Beginners</p>
-                     </div>
+                    <iframe class="rounded-lg" 
+                        src="https://www.youtube.com/embed/qwNuYbxVIYk?si=XHAdLfSbc2o6q5C2" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="flex items-center mt-5 gap-3">
+                        <img class="w-[40px] h-[40px] rounded-full" src="./images/anisul-islam.jpg" alt="">
+                        <p class="text-lg font-bold">Master Redux Toolkit <br> with React | Complete Guide <br> for Beginners</p>
+                    </div>
                 </div>
                 <div class="mt-2">
-                    <iframe class="rounded-lg" width="440" height="250" src="https://www.youtube.com/embed/EbHf2aCuPVM?si=LQfXUjqRQQmAa9Ur" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                     <div class="flex items-center mt-5 gap-3">
-                        <img class="w-[40px] h-[40px] rounded-full"  src="./images/stack-learnerjpg.jpg" alt="">
-                        <p class="text-lg font-bold">Day 1: REST API From Concepts to Constraints | REST API Design Workshop | Stack Learner</p>
-                     </div>
+                    <iframe class="rounded-lg" 
+                        src="https://www.youtube.com/embed/EbHf2aCuPVM?si=LQfXUjqRQQmAa9Ur" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="flex items-center mt-5 gap-3">
+                        <img class="w-[40px] h-[40px] rounded-full" src="./images/stack-learnerjpg.jpg" alt="">
+                        <p class="text-lg font-bold">Day 1: REST API From Concepts <br> to Constraints | REST API Design Workshop |
+                            Stack
+                            Learner</p>
+                    </div>
                 </div>
-
-            </div>  
+            
             </div>
-         </div>
+           
+        </div>
+
+    
+        
     </main>
+
+
 </body>
+
 </html>
